@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--Esta es mi primer pagina htmls-->
+<html lang="es">
+<head></head>
+<body>
+    <h1>Formularios</h1>
+    <form method="post" action=""
+    enctype="text/plain">
+    <fieldset>
+        <legend>Informacion del cliente</legend>
+        <label for="usuario">
+        Nombre de usuario:<br/>
+        </label>
+        <input type="text" name="usuario"
+        id="usuario" maxlength="25" placeholder="Nombre"
+         size="14" title="Nombre de usuario" for="Nombre"> 
+</label><br/>
+</label>
+<label for="usuario">
+Nombre:<br/>
+</label>
+<input type="text" name="nombre"
+id="usuario" maxlength="25" placeholder="Nombre"
+ size="14" title="nombre" for="Nombre"> 
+ 
+</label><br/>
+<label for="usuario">
+    Apellido Paterno:<br/>
+    </label>
+       <input type="text" name="Apellido Paterno"
+         id="usuario" maxlength="25" placeholder="Apellido Paterno"
+         size="14" title="apellido Paterno" for="apellido Paterno"> 
+         </label><br/>
+
+        <label for="usuario">
+        Apellido Materno: <br/>
+        </label>
+        <input type="text" name="Apellido Materno"
+        id="usuario" maxlength="25" placeholder="Apellido Materno"
+         size="14" title="Apellido Materno" > 
+         </label><br/>
+        
+        <label for=""pass> Password </label><br/>
+        <input type="password" name="pass"
+        id="pass" maxlength="15" required /><br/>
+        
+        <label for="sugiere">Sugerencias</label><br/>
+        <textarea name="sugiere" cols="25" rows="10"></textarea> <br/>
+        <input type="submit" name="enviar"
+        id="enviar" value="Enviar Formulario"/> <br/>
+        
+        <label for="correo"> E-mail </label><br/>
+        <input type="email" name="correo" id="correo"
+        placeholder="Correo Electronico"><br/>
+        
+        <label for="fecha"> Fecha de Nacimiento</label><br/>
+        <input type="date" name="fecha" placeholder="Fecha de Nacimiento"/> <br/>
+        
+        <label for="colores">Selecciona un color: </label>
+        <input type="color" name="colores" id="colores"> <br>
+
+        <h3>Indica tu Genero </h3>
+        <input type="radio" name="genero" id="genero" value="m"/>
+        <label for="genero"> Masculino </label> </br>
+        
+        <input type="radio" name="genero" id="genero" value="f"/>
+        <label for="genero"> Femenino </label>
+
+        <h3> Indica tu preferencia de producto</h3>
+        <select size="5" multiple>
+            <optgroup label="Diversos">
+            <option>Electronica</option>
+            <option>Computadoras</option>
+            <option>Linea Blanca <selected></option>
+            <option>Autos</option>
+            <option>Ropa</option>
+        </optgroup>
+            <optgroup label="Alimentos">
+            <option>Lacteos</option>
+            <option>Abarrotes</option>
+        </optgroup></br>
+        </select>
+        
+        <label for="marca"> Marca del Producto</label></br>
+        <input type="text" name="marca" id="marca" list="marcas"/>
+        <datalist id="marcas">
+            <option>Mabe</option>
+            <option>LG</option>
+            <option>Samsung</option>
+            <option>Nokia</option>
+            <option>Oster</option>
+            <option>Lanix</option>
+            <option>Sony</option>
+        </datalist>
+        </br>
+        <input type="reset" name="borrar" id="borrar"/>
+
+    
+        <input type="submit" name="enviar" id="enviar" 
+        value="Enviar Formulario"/> </br>
+
+    </fieldset>
+</form>
+</body>
+</html>    
