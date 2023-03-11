@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compra de boletos de cine</title>
+</head>
+<body>
+	<h1>Compra de boletos de cine</h1>
+	<form>
+		<label for="nombre">Nombre completo:</label><br>
+		<input type="text" id="nombre" name="nombre" required><br>
+php
+Copy code
+	<label for="correo">Correo electrónico:</label><br>
+	<input type="email" id="correo" name="correo" required><br>
+
+	<label for="pelicula">Película:</label><br>
+	<select id="pelicula" name="pelicula">
+		<option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+		<option value="The Batman">The Batman</option>
+		<option value="Jurassic World: Dominion">Jurassic World: Dominion</option>
+		<option value="Matrix Resurrections">Matrix Resurrections</option>
+	</select><br>
+
+	<label for="sala">Sala:</label><br>
+	<select id="sala" name="sala">
+		<option value="Sala 1">Sala 1</option>
+		<option value="Sala 2">Sala 2</option>
+		<option value="Sala 3">Sala 3</option>
+		<option value="Sala 4">Sala 4</option>
+	</select><br>
+
+	<label for="asientos">Número de asientos:</label><br>
+	<input type="number" id="asientos" name="asientos" min="1" max="10" required><br>
+
+	<label for="fecha">Fecha:</label><br>
+	<input type="date" id="fecha" name="fecha" required><br>
+
+	<label for="hora">Hora:</label><br>
+	<input type="time" id="hora" name="hora" required><br>
+
+	<label for="metodo_pago">Método de pago:</label><br>
+	<input type="radio" id="credito" name="metodo_pago" value="credito" required>
+	<label for="credito">Tarjeta de crédito</label><br>
+	<input type="radio" id="debito" name="metodo_pago" value="debito">
+	<label for="debito">Tarjeta de débito</label><br>
+
+	<input type="submit" value="Comprar">
+</form>
+</body>
+</html>
