@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de contratación</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<h2  div id="titulo1"></div>Práctica 5</h2>
+	<h3  div id="titulo2"></div>Formulario</h3>
+	<h3 div id="titulo3"></div>Primavera 2023</h3>
+	<form>
+		<fieldset>
+			<legend>Datos del cliente</legend>
+			<table class="centrado">
+				<tr>
+					<td>Nombre:</td>
+					<td><input type="text" name="nombre" required></td>
+				</tr>
+				<tr>
+					<td>Apellido paterno:</td>
+					<td><input type="text" name="ap_paterno" required></td>
+				</tr>
+				<tr>
+					<td>Apellido materno:</td>
+					<td><input type="text" name="ap_materno" required></td>
+				</tr>
+				<tr width="75%">
+					<td>Apellidos:</td>
+					<td>
+						<input type="text" name="apellidos_2" required>
+						<input type="text" name="apellidos_1" required>
+					</td>
+				</tr>
+				<tr>
+					<td>Ciudad:</td>
+					<td>
+						<select name="ciudad" width="75%">
+							<option value="0">Seleccione una ciudad</option>
+							<option value="1">Ciudad 1</option>
+							<option value="2">Ciudad 2</option>
+							<option value="3">Ciudad 3</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Servicio a contratar</legend>
+			<table class="centrado">
+				<tr>
+					<td>
+						<input type="checkbox" name="servicio1" value="1" checked>
+						<label>Servicio 1</label>
+					</td>
+					<td>
+						<input type="checkbox" name="servicio2" value="2" checked>
+						<label>Servicio 2</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Forma de pago</legend>
+			<table class="centrado">
+				<tr>
+					<td>
+						<input type="radio" name="pago" value="debito" checked>
+						<label>Tarjeta débito</label>
+					</td>
+					<td>
+						<input type="radio" name="pago" value="credito">
+						<label>Tarjeta crédito</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<table class="centrado">
+			<tr>
+				<td><input type="submit" value="Enviar"></td>
+				<td><input type="reset" value="Restablecer"></td>
+			</tr>
+		</table>
+	</form>
+    <h5>Fabian Guzman Robledo</h5>
+</body>
+</html>
+``
