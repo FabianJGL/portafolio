@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lo mejor de la playa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nombre+de+la+fuente:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: "Nombre de la fuente", sans-serif;
+        }
+css
+Copy code
+    .titulo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .menu {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu a:hover {
+        background-color: #ffcc00;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    .submenu a {
+        color: #000000;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px 0;
+        display: block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .submenu a:hover {
+        background-color: #ffcc00;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .servicios:hover .submenu {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Lo mejor de la playa</h1>
+    </div>
+    <div class="menu">
+        <a href="#">Inicio</a>
+        <div class="servicios">
+            <a href="#">Servicios que se ofrecen</a>
+            <div class="submenu">
+                <a href="#">Opción 1</a>
+                <a href="#">Opción 2</a>
+                <a href="#">Opción 3</a>
+                <a href="#">Opción 4</a>
+            </div>
+        </div>
+        <a href="#">Galería</a>
+        <a href="#">Contacto</a>
+    </div>
+</body>
+</html>
