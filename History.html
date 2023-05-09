@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de API de Historial HTML</title>
+</head>
+<body>
+	<h1>Mi sitio web</h1>
+	<p>Este es el contenido de mi sitio web.</p>
+	
+	<button onclick="navegar('pagina1.html')">Ir a la página 1</button>
+	<button onclick="navegar('pagina2.html')">Ir a la página 2</button>
+	
+	<script>
+		function navegar(url) {
+			history.pushState({}, null, url);
+			cargarPagina(url);
+		}
+		
+		function cargarPagina(url) {
+			// Aquí se cargaría el contenido de la página en la sección correspondiente de la página actual
+		}
+		
+		window.addEventListener('popstate', function(event) {
+			cargarPagina(location.pathname);
+		});
+	</script>
+</body>
+</html>
